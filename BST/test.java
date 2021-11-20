@@ -10,7 +10,7 @@ public class test
             Tree.insert(p);
         }
     }
-    public String lesen_rec(BinaryTree<Integer> B)
+    public void lesen_rec(BinaryTree<Integer> B)
     {
         BinaryTree<Integer> Left,Right;
     int zahl=0;
@@ -18,7 +18,7 @@ public class test
     if(B.getLeftTree().getContent()!=null)
     {
         Left=B.getLeftTree();
-        travers_rec(Left);
+        lesen_rec(Left);
     }
     //in
     System.out.println("Der Person heißt"+B.getContent.Name)
@@ -29,8 +29,5 @@ public class test
     }
     //post
     //System.out.println(zahl);
-        
-        
-        return "";
     }
 }
